@@ -1,0 +1,19 @@
+@mixin flex(
+  $display: flex,
+  $flow: row nowrap,
+  $justify: center,
+  $align: center
+) {
+  display: $display;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin absolute-element($top, $bottom, $left, $right) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+}

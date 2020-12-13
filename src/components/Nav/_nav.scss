@@ -1,0 +1,202 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 104px;
+  background-color: $white;
+  padding: 0 35px;
+  z-index: 99;
+  .logo-container {
+    @include flex();
+  }
+  .menu-button-container {
+    position: relative;
+    @include flex($justify: flex-end);
+    .menu-button-wrapper {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      .menu-button-center,
+      .menu-button-top,
+      .menu-button-bottom {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: $bg-black;
+      }
+      .menu-button-top {
+        margin-bottom: 5px;
+      }
+      .menu-button-bottom {
+        margin-top: 5px;
+      }
+    }
+  }
+  .mobile-navbar-links-container {
+    @include absolute-element(
+      $top: -292px,
+      $right: 30px,
+      $bottom: unset,
+      $left: unset
+    );
+    width: 252px;
+    height: 292px;
+    background-color: $bg-black;
+    z-index: -1;
+    .mobile-navbar-links-wrapper {
+      @include flex(
+        $flow: column nowrap,
+        $justify: space-between,
+        $align: center
+      );
+      height: 100%;
+      padding: 35px;
+    }
+  }
+  li {
+    position: relative;
+    list-style-type: none;
+    color: $white;
+    cursor: pointer;
+    &:last-child {
+      @include flex();
+      height: 64px;
+      width: 100%;
+      background-color: $red;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 50%;
+      background-color: $white;
+      transition: all 550ms;
+    }
+    a {
+      position: relative;
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    a {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 50%;
+        background-color: $white;
+        transition: all 550ms;
+      }
+    }
+  }
+  .nav-links {
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+  .navbar-links-container {
+    display: none;
+  }
+}
+
+.close {
+  transform: translateY(origin);
+  transition-duration: 550ms;
+  transition-timing-function: ease-in-out;
+}
+
+.open {
+  transform: translateY(396px);
+  transition-duration: 550ms;
+  transition-timing-function: ease-in-out;
+}
+
+.burger-close .menu-button-top {
+  transform: rotate(origin);
+  transition-duration: 550ms;
+}
+
+.burger-close .menu-button-center {
+  transform: translateX(origin);
+  transition-duration: 550ms;
+}
+
+.burger-close .menu-button-bottom {
+  transform: rotate(origin);
+  transition-duration: 550ms;
+}
+
+.burger-open .menu-button-top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  transition-duration: 550ms;
+  transition-delay: 200ms;
+}
+.burger-open .menu-button-center {
+  transform: translateX(60px);
+  transition-duration: 550ms;
+}
+
+.burger-open .menu-button-bottom {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  transition-duration: 550ms;
+  transition-delay: 200ms;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr 1.4fr;
+    padding: 0;
+    height: 176px;
+    .logo-container {
+      @include flex($justify: flex-start);
+      padding-left: 30px;
+    }
+    .menu-button-container {
+      display: none;
+    }
+    .navbar-links-container {
+      display: block;
+      @include flex();
+      background-color: $red;
+      padding: 30px;
+      .navbar-links-wrapper {
+        @include flex($justify: space-between);
+        width: 100%;
+      }
+      li {
+        &:last-child {
+          @include flex();
+          height: 50px;
+          width: 150px;
+          background-color: $bg-black;
+        }
+      }
+    }
+  }
+  .mobile-navbar-links-container {
+    display: none;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbar {
+    grid-template-columns: repeat(2, 1fr);
+    .logo-container {
+      padding-left: 120px;
+    }
+    .navbar-links-container {
+      padding: 0 120px 0 50px;
+    }
+  }
+}
