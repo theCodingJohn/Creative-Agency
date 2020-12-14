@@ -1,16 +1,18 @@
 import React from "react";
 import Nav from './components/Nav/Nav';
 import Hero from "./components/Hero/Hero";
+import Strategic from "./components/Strategic/Strategic";
 
 // styles
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Nav />
       <main>
-        <Hero/>
+        <Hero />
+        <Strategic />
       </main>
     </>
   );
