@@ -2,6 +2,7 @@
 
 body {
   font-family: Commissioner, sans-serif;
+  color: $white;
 }
 
 .navbar li {
@@ -12,9 +13,42 @@ body {
   }
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.button-wrapper a {
+  font-size: 18px;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
   .navbar li {
     font-size: 15px;
   }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
 }
