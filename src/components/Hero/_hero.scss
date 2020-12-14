@@ -33,6 +33,8 @@
   }
   a {
     position: relative;
+    text-decoration: none;
+    color: $white;
     &::after {
       content: "";
       display: block;

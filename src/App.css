@@ -470,6 +470,8 @@ p {
 
 .button-wrapper a {
   position: relative;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .button-wrapper a::after {
