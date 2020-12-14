@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from './components/Nav/Nav';
+import Hero from "./components/Hero/Hero";
 
 // styles
 import "./App.css";
@@ -7,7 +8,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Nav/>
+      <Nav />
+      <main>
+        <Hero/>
+      </main>
     </>
   );
 }

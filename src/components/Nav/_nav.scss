@@ -1,16 +1,27 @@
 .navbar {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $white;
+    overflow-x: hidden;
+    display: block;
+    z-index: 2;
+  }
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 1fr;
   height: 104px;
-  background-color: $white;
+  z-index: 1;
   padding: 0 35px;
-  z-index: 99;
   .logo-container {
-    @include flex();
+    @include flex($justify: flex-start);
+    z-index: 3;
   }
   .menu-button-container {
-    position: relative;
     @include flex($justify: flex-end);
+    z-index: 3;
     .menu-button-wrapper {
       cursor: pointer;
       width: 20px;
@@ -40,8 +51,8 @@
     );
     width: 252px;
     height: 292px;
-    background-color: $bg-black;
     z-index: -1;
+    background-color: $bg-black;
     .mobile-navbar-links-wrapper {
       @include flex(
         $flow: column nowrap,
@@ -62,6 +73,10 @@
       height: 64px;
       width: 100%;
       background-color: $red;
+      &:hover a::after {
+        width: 100%;
+        left: 0;
+      }
     }
     &::after {
       content: "";
@@ -76,12 +91,6 @@
     }
     a {
       position: relative;
-      &:hover:after {
-        width: 100%;
-        left: 0;
-      }
-    }
-    a {
       &::after {
         content: "";
         display: block;
@@ -154,6 +163,9 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .navbar {
+    &::after {
+      display: none;
+    }
     grid-template-columns: 1fr 1.4fr;
     padding: 0;
     height: 176px;
@@ -197,6 +209,12 @@
     }
     .navbar-links-container {
       padding: 0 120px 0 50px;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
