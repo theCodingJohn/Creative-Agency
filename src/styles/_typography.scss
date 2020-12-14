@@ -22,6 +22,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  font-weight: 800px;
 }
 
 h3 {
@@ -35,6 +36,12 @@ p {
 
 .button-wrapper a {
   font-size: 18px;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: 800;
+  opacity: 0.25;
 }
 
 // Medium devices (tablets, 768px and up)
