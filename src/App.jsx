@@ -2,7 +2,7 @@ import React from "react";
 import Nav from './components/Nav/Nav';
 
 // styles
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
