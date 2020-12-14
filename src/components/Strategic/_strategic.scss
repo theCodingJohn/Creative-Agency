@@ -1,0 +1,77 @@
+.strategic-design {
+  height: 579px;
+  background-color: $black;
+  .strategic-design-image {
+    @extend .hero-image;
+    background: url(/src/assets/mobile/image-strategic.jpg) no-repeat center;
+    background-size: cover;
+    .strategic-wave-red-mobile {
+      position: absolute;
+      bottom: -12px;
+      left: 20px;
+    }
+  }
+  .strategic-description-container {
+    padding: 60px 0 0 20px;
+    p {
+      width: 95%;
+      margin: 28px 0;
+    }
+    .button-wrapper {
+      justify-content: flex-start;
+      background-color: transparent;
+      &:hover a::after {
+        width: 0%;
+      }
+      a {
+        &::after {
+          background-color: $red;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+  .strategic-description-wrapper {
+    @include flex($flow: column, $align: flex-start);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .strategic-design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 660px;
+    .strategic-design-image {
+      background: url(/src/assets/tablet/image-strategic.jpg) no-repeat center;
+      background-size: cover;
+      box-shadow: none;
+      order: 1;
+      .strategic-wave-red-mobile {
+        position: absolute;
+        top: 210px;
+        right: -28px;
+        bottom: unset;
+        left: unset;
+      }
+    }
+    .strategic-description-container {
+      @include flex();
+      padding: 0 0 0 56px;
+      order: 2;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .hero-image {
+    background: url(/src/assets/desktop/image-strategic.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .strategic-design .strategic-description-container p {
+    width: 80%;
+  }
+}
