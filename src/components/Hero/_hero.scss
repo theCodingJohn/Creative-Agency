@@ -90,7 +90,14 @@
       width: 100%;
     }
     .hero-description-container {
-      padding-left: 120px;
+      padding-left: 90px;
+      p {
+        margin: 45px 0;
+      }
+    }
+
+    .hero-description-wrapper {
+      width: 630px;
     }
   }
 }

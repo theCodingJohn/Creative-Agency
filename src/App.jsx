@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Nav />
-      <main style={{overflowX: 'hidden'}}>
+      <main style={{overflow: 'hidden'}}>
         <Hero />
         <Strategic />
         <Keypoints />

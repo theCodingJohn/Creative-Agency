@@ -8,7 +8,7 @@
   }
 }
 
-.footer-wave-red-mobile {
+.footer-wave-red-desktop {
   display: none;
 }
 
@@ -25,13 +25,13 @@
 
 @media (min-width: 992px) {
   .main-footer {
-    // height: 368px;
-    padding: 0 120px;
+    height: 368px;
+    padding: 0 90px;
   }
-  .footer-wave-red-mobile {
+  .footer-wave-red-desktop {
     position: absolute;
-    left: -28px;
-    top: 50%;
+    left: -75px;
+    top: calc(50% - 20px);
     display: block;
   }
 }

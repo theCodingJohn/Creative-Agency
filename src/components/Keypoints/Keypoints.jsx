@@ -3,8 +3,10 @@ import React from 'react'
 function Keypoints() {
   return (
     <div className="keypoints">
-			<div className="keypoints-title-wrapper">
-				<h2>Our approach for<br />creating a winning<br/>brand</h2>
+		  <div className="keypoints-title-wrapper">
+			  <div className="keypoints-title-container">
+			  	<h2>Our approach for<br />creating a winning<br/>brand</h2>
+			  </div>
 			</div>
 			<div className="keypoints-container">
 				<div className="keypoints-wrapper">
