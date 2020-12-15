@@ -1,12 +1,5 @@
 .hero {
   height: 700px;
-  .hero-image {
-    position: relative;
-    background: url(/src/assets/mobile/image-hero.jpg) no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-  }
   .hero-description-container {
     padding: 60px 0 0 20px;
     h1 {
@@ -17,30 +10,41 @@
       color: $black;
       margin: 28px 0;
     }
-    .button-wrapper {
-      @include flex();
-      width: 178px;
-      height: 60px;
-      background-color: $red;
-      cursor: pointer;
-      &:hover a::after {
-        width: 100%;
-        left: 0;
-      }
-      a {
-        position: relative;
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 0;
-          height: 2px;
-          bottom: -4px;
-          left: 50%;
-          background-color: $white;
-          transition: all 550ms;
-        }
-      }
+  }
+}
+
+.hero-image {
+  position: relative;
+  background: url(/src/assets/mobile/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.button-wrapper {
+  @include flex();
+  width: 178px;
+  height: 60px;
+  background-color: $red;
+  cursor: pointer;
+  &:hover a::after {
+    width: 100%;
+    left: 0;
+  }
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $white;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 50%;
+      background-color: $white;
+      transition: all 550ms;
     }
   }
 }
@@ -52,18 +56,11 @@
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     height: 608px;
-    .hero-image {
-      position: static;
-      background: url(/src/assets/tablet/image-hero.jpg) no-repeat center;
-      box-shadow: 5px 0px 8px 0px $white inset;
-      background-size: cover;
-      height: 100%;
-      order: 2;
-    }
     .hero-description-container {
       padding: 0 0 0 30px;
       display: flex;
       align-items: center;
+      order: 1;
       p {
         margin: 35px 0;
       }
@@ -73,12 +70,20 @@
       width: 520px;
     }
   }
+  .hero-image {
+    background: url(/src/assets/tablet/image-hero.jpg) no-repeat center;
+    box-shadow: 5px 0px 8px 0px $white inset;
+    background-size: cover;
+    height: 100%;
+    order: 2;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .hero {
     grid-template-columns: 1fr 2fr;
+    height: 800px;
     .hero-image {
       background: url(/src/assets/desktop/image-hero.jpg) no-repeat center;
       background-size: cover;

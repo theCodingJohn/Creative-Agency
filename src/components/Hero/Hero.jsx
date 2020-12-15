@@ -9,7 +9,7 @@ function Hero() {
 					<h1>Branding & <br/>website design <br/>agency</h1>
 					<p>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
 					<div className='button-wrapper'>
-					<a>Learn More</a>
+					<a href="/">Learn More</a>
 				</div>
 				</div>
 			</div>
