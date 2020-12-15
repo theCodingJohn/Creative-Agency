@@ -1,0 +1,37 @@
+.main-footer {
+  @include flex($flow: column, $align: left);
+  position: relative;
+  height: 390px;
+  padding: 20px;
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.footer-wave-red-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    @include flex($justify: space-between);
+    padding: 0 30px;
+    height: 252px;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-footer {
+    // height: 368px;
+    padding: 0 120px;
+  }
+  .footer-wave-red-mobile {
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    display: block;
+  }
+}

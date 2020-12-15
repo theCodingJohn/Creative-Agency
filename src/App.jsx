@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Strategic from "./components/Strategic/Strategic";
 import Keypoints from "./components/Keypoints/Keypoints";
 import Slide from "./components/Slide/Slide";
+import Footer from "./components/Footer/Footer";
 
 // styles
 import "./App.css";
@@ -18,6 +19,7 @@ function App() {
         <Keypoints />
         <Slide />
       </main>
+      <Footer />
     </>
   );
 }
