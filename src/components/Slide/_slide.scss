@@ -55,6 +55,11 @@
     .prev,
     .next {
       cursor: pointer;
+      &:hover {
+        transition: background-color 500ms;
+        border-radius: 50%;
+        background-color: $white;
+      }
     }
   }
 }

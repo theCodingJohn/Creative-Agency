@@ -930,6 +930,14 @@ p {
   cursor: pointer;
 }
 
+.slide-control-container .arrows-wrapper .prev:hover,
+.slide-control-container .arrows-wrapper .next:hover {
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .wave-white-desktop {
   display: none;
 }
