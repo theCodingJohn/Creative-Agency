@@ -1,14 +1,14 @@
 .hero {
-  height: 700px;
+  height: 43.75rem;
   .hero-description-container {
-    padding: 60px 0 0 20px;
+    padding: 3.75rem 0 0 1.25rem;
     h1 {
       color: $black;
     }
     p {
       width: 95%;
       color: $black;
-      margin: 28px 0;
+      margin: 1.75rem 0;
     }
   }
 }
@@ -18,13 +18,13 @@
   background: url(/src/assets/mobile/image-hero.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 12.5rem;
 }
 
 .button-wrapper {
   @include flex();
-  width: 178px;
-  height: 60px;
+  width: 11.13rem;
+  height: 3.75rem;
   background-color: $red;
   cursor: pointer;
   &:hover a::after {
@@ -40,8 +40,8 @@
       display: block;
       position: absolute;
       width: 0;
-      height: 2px;
-      bottom: -4px;
+      height: 0.13rem;
+      bottom: -0.25rem;
       left: 50%;
       background-color: $white;
       transition: all 550ms;
@@ -55,24 +55,24 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    height: 608px;
+    height: 38rem;
     .hero-description-container {
-      padding: 0 0 0 30px;
+      padding: 0 0 0 1.88rem;
       display: flex;
       align-items: center;
       order: 1;
       p {
-        margin: 35px 0;
+        margin: 2.19rem 0;
       }
     }
     .hero-description-wrapper {
       position: absolute;
-      width: 520px;
+      width: 32.5rem;
     }
   }
   .hero-image {
     background: url(/src/assets/tablet/image-hero.jpg) no-repeat center;
-    box-shadow: 5px 0px 8px 0px $white inset;
+    box-shadow: 0.32rem 0px 5rem 0px $white inset;
     background-size: cover;
     height: 100%;
     order: 2;
@@ -83,21 +83,21 @@
 @media (min-width: 992px) {
   .hero {
     grid-template-columns: 1fr 2fr;
-    height: 800px;
+    height: 50rem;
     .hero-image {
       background: url(/src/assets/desktop/image-hero.jpg) no-repeat center;
       background-size: cover;
       width: 100%;
     }
     .hero-description-container {
-      padding-left: 90px;
+      padding-left: 5.63rem;
       p {
-        margin: 45px 0;
+        margin: 2.82rem 0;
       }
     }
 
     .hero-description-wrapper {
-      width: 630px;
+      width: 39.38rem;
     }
   }
 }

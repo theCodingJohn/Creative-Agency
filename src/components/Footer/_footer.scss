@@ -4,7 +4,7 @@
   height: 390px;
   padding: 20px;
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -25,13 +25,13 @@
 
 @media (min-width: 992px) {
   .main-footer {
-    height: 368px;
-    padding: 0 90px;
+    height: 23rem;
+    padding: 0 5.63rem;
   }
   .footer-wave-red-desktop {
     position: absolute;
     left: -75px;
-    top: calc(50% - 20px);
+    top: calc(50% - 1.25rem);
     display: block;
   }
 }

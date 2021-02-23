@@ -1,6 +1,6 @@
 .slide {
   width: 300vw;
-  height: 678px;
+  height: 42.38rem;
   .wave-white {
     display: none;
   }
@@ -11,11 +11,11 @@
   @include flex();
   transition: 500ms;
   width: 100%;
-  height: 406px;
+  height: 25.38rem;
   .slide-image {
     @include flex($flow: column, $justify: flex-end, $align: flex-end);
     width: 100%;
-    height: 406px;
+    height: 25.38rem;
   }
 }
 
@@ -25,7 +25,7 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.8) 100%
   );
-  padding: 20px;
+  padding: 1.25rem;
   width: 100%;
 }
 
@@ -45,12 +45,12 @@
 .slide-control-container {
   @include flex($flow: column, $align: flex-start);
   padding: 0 20px;
-  height: 272px;
+  height: 17rem;
   background-color: $black;
   .arrows-wrapper {
-    margin-top: 30px;
+    margin-top: 1.88rem;
     .prev {
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
     .prev,
     .next {
@@ -73,11 +73,11 @@
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     width: 100%;
-    height: 472px;
+    height: 29.5rem;
     .wave-white {
       display: block;
       position: absolute;
-      right: -28px;
+      right: -1.75rem;
     }
   }
   .slide-image-container {
@@ -97,13 +97,13 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      bottom: -200px;
+      bottom: -12.5rem;
       background-color: $white;
     }
     .slide-control-wrapper {
       position: absolute;
       @include flex($flow: column, $align: flex-start);
-      padding-left: 30px;
+      padding-left: 1.88rem;
       background-color: inherit;
       width: calc(100% + 30%);
       height: 100%;
@@ -111,7 +111,7 @@
   }
 
   .slide-desc-wrapper {
-    padding: 0 30px 30px 0;
+    padding: 0 1.88rem 1.88rem 0;
   }
 
   .slide-image-1 {
@@ -130,25 +130,25 @@
 
 @media (min-width: 992px) {
   .slide {
-    height: 731px;
+    height: 45.69rem;
     .wave-white {
       display: none;
     }
   }
   .slide-control-container {
-    height: 500px;
+    height: 31.25rem;
     &::before {
-      bottom: -250px;
+      bottom: -15.63rem;
     }
     .slide-control-wrapper {
-      padding-left: 90px;
+      padding-left: 5.62rem;
     }
     .arrows-wrapper {
-      margin-top: 35px;
+      margin-top: 2.19rem;
     }
   }
   .slide-desc-wrapper {
-    padding: 0 90px 60px 0;
+    padding: 0 5.63rem 3.75rem 0;
   }
   .slide-image-1 {
     background: url(/src/assets/desktop/image-slide-1.jpg) no-repeat center;

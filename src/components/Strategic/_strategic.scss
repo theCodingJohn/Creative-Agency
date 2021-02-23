@@ -1,5 +1,5 @@
 .strategic-design {
-  height: 579px;
+  height: 36.19rem;
   background-color: $black;
   .strategic-design-image {
     @extend .hero-image;
@@ -7,15 +7,15 @@
     background-size: cover;
     .strategic-wave-red-mobile {
       position: absolute;
-      bottom: -12px;
-      left: 20px;
+      bottom: -0.75rem;
+      left: 1.25rem;
     }
   }
   .strategic-description-container {
-    padding: 40px 0 0 20px;
+    padding: 2.5rem 0 0 1.25rem;
     p {
       width: 95%;
-      margin: 28px 0;
+      margin: 1.75rem 0;
     }
     .button-wrapper {
       justify-content: flex-start;
@@ -46,7 +46,7 @@
   .strategic-design {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 660px;
+    height: 41.25rem;
     .strategic-design-image {
       background: url(/src/assets/tablet/image-strategic.jpg) no-repeat center;
       background-size: cover;
@@ -54,15 +54,15 @@
       order: 1;
       .strategic-wave-red-mobile {
         position: absolute;
-        top: 210px;
-        right: -28px;
+        top: 13.13rem;
+        right: -1.75rem;
         bottom: unset;
         left: unset;
       }
     }
     .strategic-description-container {
       @include flex();
-      padding: 0 0 0 56px;
+      padding: 0 0 0 3.5rem;
       order: 2;
     }
   }
@@ -71,9 +71,9 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .strategic-design {
-    height: 984px;
+    height: 61.5rem;
     .strategic-description-container {
-      padding-left: 93px;
+      padding-left: 5.82rem;
     }
   }
   .hero-image {
@@ -91,7 +91,7 @@
   .strategic-wave-red-desktop {
     display: block;
     position: absolute;
-    top: 340px;
+    top: 21.25rem;
     right: -58px;
     bottom: unset;
     left: unset;

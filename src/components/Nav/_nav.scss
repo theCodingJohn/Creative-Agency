@@ -12,9 +12,9 @@
   position: relative;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  height: 104px;
+  height: 6.5rem;
   z-index: 1;
-  padding: 0 35px;
+  padding: 0 2.19rem;
   .logo-container {
     @include flex($justify: flex-start);
     z-index: 3;
@@ -24,33 +24,33 @@
     z-index: 3;
     .menu-button-wrapper {
       cursor: pointer;
-      width: 20px;
-      height: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
       .menu-button-center,
       .menu-button-top,
       .menu-button-bottom {
         position: relative;
         width: 100%;
-        height: 2px;
+        height: 0.13rem;
         background-color: $bg-black;
       }
       .menu-button-top {
-        margin-bottom: 5px;
+        margin-bottom: 0.32rem;
       }
       .menu-button-bottom {
-        margin-top: 5px;
+        margin-top: 0.32rem;
       }
     }
   }
   .mobile-navbar-links-container {
     @include absolute-element(
-      $top: -292px,
-      $right: 30px,
+      $top: -18.25rem,
+      $right: 1.86rem,
       $bottom: unset,
       $left: unset
     );
-    width: 252px;
-    height: 292px;
+    width: 15.75rem;
+    height: 18.25rem;
     z-index: -1;
     background-color: $bg-black;
     .mobile-navbar-links-wrapper {
@@ -60,7 +60,7 @@
         $align: center
       );
       height: 100%;
-      padding: 35px;
+      padding: 2.19rem;
     }
   }
   li {
@@ -70,7 +70,7 @@
     cursor: pointer;
     &:last-child {
       @include flex();
-      height: 64px;
+      height: 4rem;
       width: 100%;
       background-color: $red;
       &:hover a::after {
@@ -83,8 +83,8 @@
       display: block;
       position: absolute;
       width: 0;
-      height: 2px;
-      bottom: -4px;
+      height: 0.13rem;
+      bottom: -0.25rem;
       left: 50%;
       background-color: $white;
       transition: all 550ms;
@@ -96,8 +96,8 @@
         display: block;
         position: absolute;
         width: 0;
-        height: 2px;
-        bottom: -4px;
+        height: 0.13rem;
+        bottom: -0.25rem;
         left: 50%;
         background-color: $white;
         transition: all 550ms;
@@ -168,10 +168,10 @@
     }
     grid-template-columns: 1fr 1.4fr;
     padding: 0;
-    height: 176px;
+    height: 11rem;
     .logo-container {
       @include flex($justify: flex-start);
-      padding-left: 30px;
+      padding-left: 1.88rem;
     }
     .menu-button-container {
       display: none;
@@ -180,7 +180,7 @@
       display: block;
       @include flex();
       background-color: $red;
-      padding: 30px;
+      padding: 1.88rem;
       .navbar-links-wrapper {
         @include flex($justify: space-between);
         width: 100%;
@@ -188,8 +188,8 @@
       li {
         &:last-child {
           @include flex();
-          height: 50px;
-          width: 150px;
+          height: 3.13rem;
+          width: 9.38rem;
           background-color: $bg-black;
         }
       }
@@ -205,12 +205,12 @@
   .navbar {
     grid-template-columns: repeat(2, 1fr);
     .logo-container {
-      padding-left: 90px;
+      padding-left: 5.63rem;
     }
     .navbar-links-container {
-      padding: 0 120px 0 50px;
+      padding: 0 7.5rem 0 3.13rem;
       li {
-        margin-right: 20px;
+        margin-right: 1.25rem;
         &:last-child {
           margin-right: 0;
         }

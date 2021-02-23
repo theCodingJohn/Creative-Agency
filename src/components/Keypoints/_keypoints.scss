@@ -1,26 +1,26 @@
 .keypoints {
-  height: 918px;
+  height: 57.38rem;
   background-color: $red;
-  padding: 96px 20px;
+  padding: 6rem 1.25rem;
   h3 {
-    margin-bottom: 15px;
+    margin-bottom: 0.94rem;
   }
 }
 
 .keypoints-title-wrapper {
-  margin-bottom: 75px;
+  margin-bottom: 4.69rem;
 }
 
 .keypoint {
   position: relative;
-  max-width: 355px;
-  min-width: 300px;
-  height: 160px;
-  margin-top: 25px;
-  padding: 0 25px;
+  max-width: 22.19rem;
+  min-width: 18.75rem;
+  height: 10rem;
+  margin-top: 1.57rem;
+  padding: 0 1.57rem;
   .number {
     position: absolute;
-    top: -16px;
+    top: -1rem;
     left: 0;
   }
 }
@@ -30,14 +30,14 @@
   .keypoints {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    height: 678px;
+    height: 42.38rem;
     padding: 0;
   }
   .keypoints-title-wrapper {
     color: $black;
     background-color: $white;
     @include flex($justify: flex-start, $align: flex-start);
-    padding: 134px 0 0 30px;
+    padding: 8.38rem 0 0 1.86rem;
     margin: 0;
   }
   .keypoints-container {
@@ -47,42 +47,42 @@
       position: absolute;
       background-color: inherit;
       @include flex($flow: column);
-      top: -122px;
+      top: -7.63rem;
       right: 0;
       width: 100%;
-      height: 800px;
+      height: 50rem;
     }
   }
   .keypoint {
-    width: 355px;
+    width: 22.19rem;
   }
 }
 
 @media (min-width: 992px) {
   .keypoints {
-    height: 900px;
+    height: 56.25rem;
     h3 {
-      margin-bottom: 30px;
+      margin-bottom: 1.88rem;
     }
   }
   .keypoints-title-wrapper {
     position: relative;
-    padding-left: 90px;
+    padding-left: 5.63rem;
   }
   .keypoints-title-container {
     position: absolute;
-    width: 540px;
+    width: 33.75rem;
     z-index: 1;
   }
 
   .keypoints-container {
     .keypoints-wrapper {
-      padding: 123px 0 0 93px;
+      padding: 7.69rem 0 0 5.82rem;
     }
   }
   .keypoint {
-    margin-top: 70px;
-    max-width: 504px;
-    width: 504px;
+    margin-top: 4.38rem;
+    max-width: 31.5rem;
+    width: 31.5rem;
   }
 }
